@@ -1,0 +1,237 @@
+!!python/object:ml_collections.config_dict.config_dict.ConfigDict
+_convert_dict: true
+_fields:
+  env_class: !!python/name:src.envs.jump_env_e2e.JumpEnvE2E ''
+  environment: !!python/object:ml_collections.config_dict.config_dict.ConfigDict
+    _convert_dict: true
+    _fields:
+      action_lb: !!python/object/apply:numpy.core.multiarray._reconstruct
+        args:
+        - &id001 !!python/name:numpy.ndarray ''
+        - !!python/tuple
+          - 0
+        - !!binary |
+          Yg==
+        state: !!python/tuple
+        - 1
+        - !!python/tuple
+          - 7
+        - &id002 !!python/object/apply:numpy.dtype
+          args:
+          - f8
+          - false
+          - true
+          state: !!python/tuple
+          - 3
+          - <
+          - null
+          - null
+          - null
+          - -1
+          - -1
+          - 0
+        - false
+        - !!binary |
+          AAAAAAAA4D8zMzMzMzPTv5qZmZmZmcm/MzMzMzMzA8AzMzMzMzPTv5qZmZmZmcm/MzMzMzMzA8A=
+      action_ub: !!python/object/apply:numpy.core.multiarray._reconstruct
+        args:
+        - *id001
+        - !!python/tuple
+          - 0
+        - !!binary |
+          Yg==
+        state: !!python/tuple
+        - 1
+        - !!python/tuple
+          - 7
+        - *id002
+        - false
+        - !!binary |
+          y6FFtvP9D0AzMzMzMzPTPwAAAAAAAABAMzMzMzMz878zMzMzMzPTPwAAAAAAAABAMzMzMzMz878=
+      actuator_net_ckpt: null
+      clip_negative_reward: false
+      clip_negative_terminal_reward: false
+      env_dt: 0.01
+      episode_length_s: 20.0
+      foot_friction: 1.0
+      gait: !!python/object:ml_collections.config_dict.config_dict.ConfigDict
+        _convert_dict: true
+        _fields:
+          initial_offset: !!python/object/apply:numpy.core.multiarray._reconstruct
+            args:
+            - *id001
+            - !!python/tuple
+              - 0
+            - !!binary |
+              Yg==
+            state: !!python/tuple
+            - 1
+            - !!python/tuple
+              - 4
+            - &id003 !!python/object/apply:numpy.dtype
+              args:
+              - f4
+              - false
+              - true
+              state: !!python/tuple
+              - 3
+              - <
+              - null
+              - null
+              - null
+              - -1
+              - -1
+              - 0
+            - false
+            - !!binary |
+              AAAAAAAAAAAAAAAAAAAAAA==
+          stepping_frequency: 1
+          swing_ratio: !!python/object/apply:numpy.core.multiarray._reconstruct
+            args:
+            - *id001
+            - !!python/tuple
+              - 0
+            - !!binary |
+              Yg==
+            state: !!python/tuple
+            - 1
+            - !!python/tuple
+              - 4
+            - *id003
+            - false
+            - !!binary |
+              AAAAPwAAAD8AAAA/AAAAPw==
+        _locked: true
+        _type_safe: true
+      goal_lb: !!python/object/apply:torch._utils._rebuild_tensor_v2
+      - !!python/object/apply:torch.storage._load_from_bytes
+        - !!binary |
+          gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+          AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+          aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+          Z2UKcQFYCQAAADE0NDIxNTE1MnECWAMAAABjcHVxA0sCTnRxBFEugAJdcQBYCQAAADE0NDIxNTE1
+          MnEBYS4CAAAAAAAAAAAAgD8AAAAA
+      - 0
+      - !!python/tuple
+        - 2
+      - !!python/tuple
+        - 1
+      - false
+      - !!python/object/apply:collections.OrderedDict
+        - []
+      goal_ub: !!python/object/apply:torch._utils._rebuild_tensor_v2
+      - !!python/object/apply:torch.storage._load_from_bytes
+        - !!binary |
+          gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+          AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+          aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+          Z2UKcQFYCQAAADE0NDIxNDI1NnECWAMAAABjcHVxA0sCTnRxBFEugAJdcQBYCQAAADE0NDIxNDI1
+          NnEBYS4CAAAAAAAAAAAAgD8AAAAA
+      - 0
+      - !!python/tuple
+        - 2
+      - !!python/tuple
+        - 1
+      - false
+      - !!python/object/apply:collections.OrderedDict
+        - []
+      include_foot_action: true
+      include_gait_action: true
+      max_jumps: 10.0
+      mirror_foot_action: true
+      motor_strength_ratios: 1.0
+      motor_torque_delay_steps: 5
+      normalize_reward_by_phase: true
+      rewards:
+      - !!python/tuple
+        - alive
+        - 0.02
+      - !!python/tuple
+        - upright
+        - 0.02
+      - !!python/tuple
+        - contact_consistency
+        - 0.008
+      - !!python/tuple
+        - energy_consumption
+        - 1.0e-06
+      - !!python/tuple
+        - foot_slipping
+        - 0.032
+      - !!python/tuple
+        - foot_clearance
+        - 0.008
+      - !!python/tuple
+        - out_of_bound_action
+        - 0.01
+      - !!python/tuple
+        - knee_contact
+        - 0.064
+      - !!python/tuple
+        - stepping_freq
+        - 0.008
+      - !!python/tuple
+        - com_distance_to_goal_squared
+        - 0.016
+      - !!python/tuple
+        - com_height
+        - 0.01
+      terminal_rewards: []
+      terminate_on_body_contact: true
+      terminate_on_height: 0.15
+      terminate_on_limb_contact: false
+      use_penetrating_contact: false
+      use_yaw_feedback: false
+    _locked: true
+    _type_safe: true
+  training: !!python/object:ml_collections.config_dict.config_dict.ConfigDict
+    _convert_dict: true
+    _fields:
+      algorithm: !!python/object:ml_collections.config_dict.config_dict.ConfigDict
+        _convert_dict: true
+        _fields:
+          clip_param: 0.2
+          desired_kl: 0.01
+          entropy_coef: 0.01
+          gamma: 0.99
+          lam: 0.95
+          learning_rate: 0.001
+          max_grad_norm: 1.0
+          num_learning_epochs: 5
+          num_mini_batches: 4
+          schedule: adaptive
+          use_clipped_value_loss: true
+          value_loss_coef: 1.0
+        _locked: true
+        _type_safe: true
+      policy: !!python/object:ml_collections.config_dict.config_dict.ConfigDict
+        _convert_dict: true
+        _fields:
+          activation: elu
+          actor_hidden_dims:
+          - 512
+          - 256
+          - 128
+          critic_hidden_dims:
+          - 512
+          - 256
+          - 128
+          init_noise_std: 0.5
+        _locked: true
+        _type_safe: true
+      runner: !!python/object:ml_collections.config_dict.config_dict.ConfigDict
+        _convert_dict: true
+        _fields:
+          algorithm_class_name: PPO
+          experiment_name: go1_single_jump
+          max_iterations: 500
+          num_steps_per_env: 24
+          policy_class_name: ActorCritic
+          save_interval: 50
+        _locked: true
+        _type_safe: true
+      seed: 1
+    _locked: true
+    _type_safe: true
+_locked: true
+_type_safe: true

@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./isaacgym/python"
+    ],
+    "cmake.configureOnOpen": false
+}
