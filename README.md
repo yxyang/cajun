@@ -1,6 +1,5 @@
 # CAJun: Continuous Adaptive Jumping using a Learned Centroidal Controller
-
-[](media/centroidal.gif)
+![](https://github.com/yxyang/cajun/blob/master/media/teaser.gif)
 
 This repository contains the code for the paper ["CAJun: Continuous Adaptive Jumping using a Learned Centroidal Controller"](https://arxiv.org/abs/2306.09557).
 
@@ -74,6 +73,7 @@ The environment and training configurations are stored in `src/envs/configs` and
 
 
 ### Running Centroidal Controller with GPU acceleration
+![](https://github.com/yxyang/cajun/blob/master/media/centroidal.gif)
 
 To directly run the low-level centroidal controller with GPU acceleration, run:
 ```bash
