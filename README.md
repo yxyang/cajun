@@ -84,6 +84,16 @@ which executes a trotting gait in the simulator by following a heuristically des
 * You can choose the number of robots to simulate `--num_envs=X`, switch between CPU/GPU `--use_gpu=True/False` and disable/enable GUI `--show_gui=True/False` via commandline flags.
 * Additionally, you can switch between simulation and real robot `--use_real_robot=True/False`. When running on the real robot, make sure to set `--use_gpu=False`, `--show_gui=False` and `--num_envs=1` for best performance.
 
+### Dog Tracer
+![](https://github.com/yxyang/cajun/blob/master/media/dog_tracer.gif)
+We provide a simple tool to visualize the logged robot trajectories. When evaluating PPO trajectories using `src.agents.ppo.eval` and set `save_traj=True`, the logged trajectory can be visualized using the `dog_tracer` web GUI.
+
+To start `dog_tracer`, run:
+```bash
+python -m src.dog_tracer.dog_tracer
+```
+and load the trajectories from the UI.
+
 ## Setup
 ### Software
 1. Create a new virtual environment under Python 3.6, 3.7, 3.8 (3.8 recommended).
