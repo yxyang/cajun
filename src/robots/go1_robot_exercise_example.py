@@ -95,8 +95,7 @@ def main(argv):
                       sim=sim,
                       viewer=viewer,
                       sim_config=sim_conf,
-                      motor_control_mode=MotorControlMode.HYBRID,
-                      terrain=None)
+                      motor_control_mode=MotorControlMode.HYBRID)
   robot.reset()
   start_time = time.time()
   for _ in tqdm(range(5000)):
