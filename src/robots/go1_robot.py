@@ -24,11 +24,8 @@ class Go1Robot(go1.Go1):
       init_positions: torch.Tensor,
       sim_config: ml_collections.ConfigDict,
       motor_control_mode: MotorControlMode,
-      terrain: Any,
-      actuator_net_ckpt: Union[str, None] = None,
       motor_torque_delay_steps: int = 0,
   ):
-    del actuator_net_ckpt  # unused
     del motor_torque_delay_steps  # unused
     if num_envs != 1:
       raise ValueError("Only 1 real robot is supported at this time.")
@@ -48,9 +45,7 @@ class Go1Robot(go1.Go1):
                      num_envs=num_envs,
                      init_positions=init_positions,
                      sim_config=sim_config,
-                     motor_control_mode=motor_control_mode,
-                     terrain=terrain,
-                     actuator_net_ckpt=None)
+                     motor_control_mode=motor_control_mode)
 
   def update_desired_foot_contact(self, desired_contact):
     foot_forces = self.foot_contact_forces_numpy
